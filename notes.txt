@@ -13,3 +13,15 @@ attack/special attack damage number, one or two elemental types that have even m
 make sure moves have class affinity
 
 sumoning snakes that can blast energy and stuff from your arms go on reddi and find someone knowledgeable about nen
+
+
+
+
+new notes on the two calculators 7/25
+calculator 1 will work exactly like pokemons, this will only be for basic elemental attacks 
+calculator 2 will be built further on the current calculator from first_conept.py, some things i want to have on that calculator, the nen affinities will also be a multiplier for damage, terrain multiplier, dual elemental types for attacks
+regular passives and class passives
+
+accuracy, side effects need to be added 
+taking super effective damage and the multipliers need to be added in, the class based dmg calculator will have even more exact/exaggerated values because moves can be double stab if the user is a dual type
+class based abilities use aura as a resource 

@@ -121,7 +121,7 @@ def phys_or_spec():
 
 # have something for moves that it will generate a random number that if it is a certain number or range then it is a crit and otherwise it isn't this would be when the monster uses the move which then goes into the calculator 
 
-def damage_calculator(level, base_power, user_attack_stat, defender_def_stat, weather, critical, stab, user_affinity, move_affinity, burn, user_type, accuracy):
+def damage_calculator(level, base_power, user_attack_stat, defender_def_stat, weather, critical, stab, user_affinity, move_affinity, burn, terrain, user_type):
     # need to eventually add in the enemies type as a factor for increasing/reducing damage 
     # stab value gets figured out when the user uses the use move method 
     if stab == True:
@@ -167,11 +167,7 @@ def damage_calculator(level, base_power, user_attack_stat, defender_def_stat, we
 
     damage = (((2*level)/5 +2) * base_power * (user_attack_stat/defender_def_stat)) * weather * critical * random.randint(85,100)/100 * stab * affinity_mult * burn
 
-    accuracy_roll = random.randint(1,100)
-    if accuracy_roll in range(1,accuracy+1):
-        return int(damage)
-    print('the attack missed, how unlucky')
-    return 0
+    return int(damage)
 
 class monster:
     def __init__(self, name: str):
